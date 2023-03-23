@@ -11,6 +11,11 @@
     <link rel="stylesheet" href="./assets/css/reset.css">
     <link rel="stylesheet" href="./assets/css/base.css">
     <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/step-bar.css">
+    <link rel="stylesheet" href="./assets/css/custom-radio.css">
+    <!-- JS -->
+    <script src="./assets/js/steps.js" defer></script>
 
 </head>
 
@@ -19,8 +24,8 @@
         <h1><img src="./assets/img/logoOfficeDave.png" alt="Logo OfficeDave" class="header__logo"></h1>
     </header>
     <main>
-        <a href="#">Voltar</a>
-        <div class="step__bar-container">
+        <div class="step-bar__container">
+            <!-- <a href="#">Voltar</a> -->
             <div class="step__bar-steps">
                 <div class="circle active">1</div>
                 <div class="circle ">2</div>
@@ -31,19 +36,49 @@
                     <span class="indicator" id="indicator"></span>
                 </div>
             </div>
+            <div class="steps__content">
+                <div>
+                    <p class="steps__text">Você se sente seguro no ambiente de trabalho?</p>
+                    <small>Não respondido</small>
+                </div>
+                <div>
+                    <p class="steps__text">Você se sente confortável com seus colegas de trabalho?</p>
+                    <small>Não respondido</small>
+                </div>
+                <div>
+                    <p class="steps__text">O quanto você se sente confortável com o seu gestor imediato?</p>
+                    <small>Não respondido</small>
+                </div>
+                <div>
+                    <p class="steps__text">O quão satisfeito você está com a transparência da liderança?</p>
+                    <small>Não respondido</small>
+                </div>
+                <div>
+                    <p class="steps__text">Você sente fisicamente seguro quando está no trabalho?</p>
+                    <small>Não respondido</small>
+                </div>
+            </div>
         </div>
+        </div>
+        <div class="step1__container">
 
-        <div>
-            <h2>Você se sente seguro no ambiente de trabalho?</h2>
-            <p>Tempo: 2:00 minutos</p>
-            <a href="#">Ignorar</a>
-            <label><input type="radio" name="concordancia" id="">Discordo Totalmente</label>
-            <label><input type="radio" name="concordancia" id="">Discordo</label>
-            <label><input type="radio" name="concordancia" id="">Neutro</label>
-            <label><input type="radio" name="concordancia" id="">Concordo</label>
-            <label><input type="radio" name="concordancia" id="">Concordo Totalmente</label>
+            <h2 class="step1__question">Você se sente seguro no ambiente de trabalho?</h2>
+            <div class="step1__box">
+                <p class="timer">Tempo: 2:00 minutos</p>
+                <a href="#" id="prev">Ignorar</a>
+            </div>
+            <div class="radio__question">
+                <label><input type="radio" name="concordancia" id="" class="custom-radio">Discordo
+                    Totalmente</label>
+                <label><input type="radio" name="concordancia" id="" class="custom-radio">Discordo</label>
+                <label><input type="radio" name="concordancia" id="" class="custom-radio">Neutro</label>
+                <label><input type="radio" name="concordancia" id="" class="custom-radio">Concordo</label>
+                <label><input type="radio" name="concordancia" id="" class="custom-radio">Concordo
+                    Totalmente</label>
+
+            </div>
         </div>
-        <a href="#" class="btn__next-question">Próxima Pergunta</a>
+        <a href="#" class="next-question__btn" id="next">Próxima pergunta</a>
     </main>
 </body>
 
