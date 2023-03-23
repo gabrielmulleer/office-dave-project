@@ -1,0 +1,95 @@
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "sidenav content" "none button";
+}
+
+.step-bar__container {
+    grid-area: sidenav;
+}
+
+.step1__container {
+    display: flex;
+    flex-direction: column;
+    grid-area: content;
+
+    padding-right: 16%;
+    padding-left: 10%;
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+
+}
+
+
+.step1__question {
+    padding-right: 5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    margin-top: 2%;
+    margin-bottom: 1.625rem;
+    color: var(--question-color);
+}
+
+.step1__box {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.step1__box a {
+    padding: 16px 32px;
+    border: 1px solid var(--btn-color-ignore);
+    border-radius: 5px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.timer {
+    color: var(--timer-color);
+    font-weight: 700;
+}
+
+.radio__question {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.radio__question label {
+    width: 4rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.3125rem;
+
+    text-align: center;
+    font-size: .875rem;
+    font-weight: 400;
+    color: var(--question-color);
+}
+
+/* NEXT QUESTION BUTTON  */
+.next-question__btn {
+    grid-area: button;
+
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--btn-text-color);
+    background: var(--btn-color);
+
+
+}

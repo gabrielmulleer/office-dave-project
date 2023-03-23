@@ -1,6 +1,108 @@
-.step__bar-container {
-    padding-right: 312px;
-    border-right: 3px solid rgba(0, 0, 0, 0.1);
+.step-bar__container {
+    padding-top: 10%;
+    display: grid;
+    grid-template-areas: "area1 area2";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    /* gap: 40px; */
+    max-height: 650px;
+    height: 100%;
+}
+
+.step-bar__container .step__bar-steps {
+    grid-area: area1;
+    padding-left: 50%;
+
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+
+}
+
+/*TEXTO AO LADO*/
+.steps__content {
+    grid-area: area2;
+    padding-right: 14%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* max-height: 400px; */
     height: 100%;
 
+}
+
+.steps__text {
+    font-weight: 700;
+    line-height: 130%;
+}
+
+
+.step__bar-steps .circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+    width: 50px;
+    border: 4px solid #e0e0e0;
+    border-radius: 50%;
+    color: #999;
+    font-size: 22px;
+    font-weight: 500;
+    background: #fff;
+    transition: .2s ease;
+    transition-delay: 0ms;
+}
+
+.step__bar-steps .circle.active {
+    transition-delay: 100ms;
+    border-color: #4070f4;
+    color: #4070f4;
+}
+
+.step__bar-steps .step__bar-progress-bar {
+    /* left: 6.2%; */
+    position: absolute;
+    width: 4px;
+    height: 100%;
+    background: #e0e0e0;
+    z-index: -1;
+
+}
+
+.step__bar-progress-bar .indicator {
+    position: absolute;
+    width: 100%;
+    height: 0;
+    background: #4070f4;
+    transition: .3s ease;
+}
+
+.step-bar__container .buttons {
+    /* display: none; */
+    gap: 20px;
+}
+
+.buttons button {
+    padding: 8px 25px;
+    background: #4070f4;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    cursor: pointer;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.05);
+}
+
+.buttons button:disabled {
+    background: #87a5f8;
+    cursor: not-allowed;
 }

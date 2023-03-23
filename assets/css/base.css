@@ -20,6 +20,20 @@
     padding-right: 10rem;
 }
 
+html {
+    height: 100%;
+    width: 100%;
+}
+
 body {
-    height: 100vh;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "header header" "main main";
+}
+
+small {
+    font-size: smaller;
+    color: var(--timer-color);
 }
