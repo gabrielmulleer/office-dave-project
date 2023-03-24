@@ -1,0 +1,42 @@
+.step1__content {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+}
+
+.step1__box-user {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.step1__box-user p {
+    font-weight: 700;
+}
+
+.text-area__question {
+    display: flex;
+    justify-content: space-between;
+
+    margin-top: auto;
+    margin-bottom: auto;
+
+}
+
+.text-area__question label {
+    display: flex;
+    flex-direction: column;
+    gap: 1.125rem;
+    font-weight: 700;
+
+}
+
+.step1__text-area {
+    resize: none;
+    padding: 2rem;
+    border-radius: 0px 30px 30px 30px;
+    border: 1px solid #333333;
+    height: 15rem;
+    width: 40rem;
+}
