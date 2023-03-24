@@ -64,7 +64,7 @@ main {
 
 }
 
-.radio__question label {
+.radio__question .radio__question-text {
     width: 4rem;
     display: flex;
     align-items: center;
