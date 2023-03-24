@@ -1,3 +1,21 @@
+.radio__box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    border-radius: 10px;
+
+    width: 143px;
+    height: 143px;
+    background: linear-gradient(0deg, #EFEFEF, #EFEFEF), #EFEFEF;
+}
+
+.radio__question label {
+    width: auto;
+}
+
+
 .custom-radio {
     cursor: pointer;
     /* hiding browser el */
@@ -18,7 +36,7 @@
 }
 
 .custom-radio {
-    box-shadow: 0 0 0 5px var(--radio-color);
+    /* box-shadow: 0 0 0 5px var(--radio-color); */
 }
 
 .custom-radio:hover {
@@ -26,7 +44,7 @@
 }
 
 .custom-radio:checked {
-    box-shadow: 0 0 0 5px var(--radio-checked-color);
+    /* box-shadow: 0 0 0 5px var(--radio-checked-color); */
     background-color: var(--radio-checked-color);
     border-width: .375rem;
 
