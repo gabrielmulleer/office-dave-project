@@ -1,21 +1,15 @@
-.step1__content {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-}
-
-.step1__box-user {
+.main-area__user {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 1rem;
 }
 
-.step1__box-user p {
+.main-area__user p {
     font-weight: 700;
 }
 
-.text-area__question {
+.main-area__alternative-text {
     display: flex;
     justify-content: space-between;
 
@@ -24,7 +18,7 @@
 
 }
 
-.text-area__question label {
+.main-area__alternative-text label {
     display: flex;
     flex-direction: column;
     gap: 1.125rem;
@@ -32,7 +26,7 @@
 
 }
 
-.step1__text-area {
+.main-area__text-area {
     resize: none;
     padding: 2rem;
     border-radius: 0px 30px 30px 30px;

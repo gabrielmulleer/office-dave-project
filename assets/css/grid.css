@@ -1,0 +1,42 @@
+body {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 80%;
+    grid-template-areas: "header header" "main main";
+}
+
+header {
+    grid-area: header;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: 90% 10%;
+    grid-template-areas: "sidenav content" "none button";
+}
+
+.step-bar__container {
+    grid-area: sidenav;
+    display: grid;
+    grid-template-areas: "area1 area2";
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 100%;
+}
+
+.step-bar__container .step__bar-steps {
+    grid-area: area1;
+}
+
+.steps__content {
+    grid-area: area2;
+}
+
+.main-area__container {
+    grid-area: content;
+}
+
+.next-question__btn {
+    grid-area: button;
+}
