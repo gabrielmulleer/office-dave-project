@@ -1,18 +1,6 @@
-main {
-    display: grid;
-    grid-template-columns: 30% 70%;
-    grid-template-rows: 90% 10%;
-    grid-template-areas: "sidenav content" "none button";
-}
-
-.step-bar__container {
-    grid-area: sidenav;
-}
-
-.step1__container {
+.main-area__container {
     display: flex;
     flex-direction: column;
-    grid-area: content;
 
     padding-right: 16%;
     padding-left: 10%;
@@ -20,8 +8,7 @@ main {
 
 }
 
-
-.step1__question {
+.main-area__question {
     padding-right: 5rem;
     font-size: 3rem;
     font-weight: 700;
@@ -30,13 +17,13 @@ main {
     color: var(--question-color);
 }
 
-.step1__box {
+.main-area__box {
     display: flex;
     justify-content: space-between;
 
 }
 
-.step1__box a {
+.main-area__box a {
     padding: 16px 32px;
     border: 1px solid var(--btn-color-ignore);
     border-radius: 5px;
@@ -55,7 +42,7 @@ main {
     font-weight: 700;
 }
 
-.radio__question {
+.main-area__alternative {
     display: flex;
     justify-content: space-between;
 
@@ -64,7 +51,7 @@ main {
 
 }
 
-.radio__question label {
+.main-area__alternative label {
     width: 4rem;
     display: flex;
     align-items: center;
@@ -79,9 +66,6 @@ main {
 
 /* NEXT QUESTION BUTTON  */
 .next-question__btn {
-    grid-area: button;
-
-
     display: flex;
     align-items: center;
     justify-content: center;

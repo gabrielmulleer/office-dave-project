@@ -1,9 +1,5 @@
 .step-bar__container {
     padding-top: 10%;
-    display: grid;
-    grid-template-areas: "area1 area2";
-    grid-template-columns: 40% 60%;
-    grid-template-rows: 100%;
 
     /* display: flex; */
     flex-direction: column;
@@ -13,8 +9,7 @@
     height: 100%;
 }
 
-.step-bar__container .step__bar-steps {
-    grid-area: area1;
+.step-bar__container .step-bar__steps {
     padding-left: 50%;
 
     display: flex;
@@ -27,8 +22,8 @@
 }
 
 /*TEXTO AO LADO*/
-.steps__content {
-    grid-area: area2;
+.step-bar__content {
+
     padding-right: 14%;
 
     display: flex;
@@ -40,13 +35,13 @@
 
 }
 
-.steps__text {
+.step-bar__text {
     font-weight: 700;
     line-height: 130%;
 }
 
 
-.step__bar-steps .circle {
+.step-bar__steps .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -62,13 +57,13 @@
     transition-delay: 0ms;
 }
 
-.step__bar-steps .circle.active {
+.step-bar__steps .circle.active {
     transition-delay: 100ms;
     border-color: #4070f4;
     color: #4070f4;
 }
 
-.step__bar-steps .step__bar-progress-bar {
+.step-bar__steps .step-bar__progress {
     /* left: 6.2%; */
     position: absolute;
     width: 4px;
@@ -78,7 +73,7 @@
 
 }
 
-.step__bar-progress-bar .indicator {
+.step-bar__progress .indicator {
     position: absolute;
     width: 100%;
     height: 0;
