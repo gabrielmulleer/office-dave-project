@@ -7,3 +7,11 @@ textArea.addEventListener("input", () => {
     next.disabled = true;
   }
 });
+
+next.addEventListener("click", () => {
+  if (location.pathname === "/step1-msg.html") {
+    location.href = "step2.html";
+  } else if (location.pathname === "/step2-msg.html") {
+    location.href = "step3.html";
+  }
+});

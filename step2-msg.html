@@ -13,11 +13,14 @@
     <link rel="stylesheet" href="./assets/css/grid.css">
     <link rel="stylesheet" href="./assets/css/header.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/textarea.css">
     <link rel="stylesheet" href="./assets/css/step-bar.css">
-    <link rel="stylesheet" href="./assets/css/custom-radio2.css">
+    <!-- <link rel="stylesheet" href="./assets/css/custom-radio.css"> -->
     <!-- JS -->
     <script src="./assets/js/steps.js" defer></script>
-    <script src="./assets/js/step02page.js" defer></script>
+        <script src="./assets/js/stepsmsg.js" defer></script>
+
+
 </head>
 
 <body>
@@ -63,21 +66,23 @@
         </div>
         <div class="main-area__container">
 
-            <h2 class="main-area__question">Você se sente confortável com seus colegas de trabalho.</h2>
+            <h2 class="main-area__question">Você se sente confortável com seus colegas de trabalho.
+            </h2>
+
             <div class="main-area__box">
-                <p class="timer">Tempo: 2:00 minutos</p>
+                <div class="main-area__user"><img src="./assets/img/icon_anonimous.svg" alt="Anonimous Icon">
+                    <p>Usuário Anônimo</p>
+                </div>
                 <a href="#" id="prev">Ignorar</a>
             </div>
-            <div class="main-area__alternative">
-                <div class="radio__box"><label><input type="radio" name="concordancia" id="" class="custom-radio">Nem um
-                        pouco!</label></div>
-                <div class="radio__box"><label><input type="radio" name="concordancia" id="" class="custom-radio">Não
-                        muito!</label></div>
-                <div class="radio__box"><label><input type="radio" name="concordancia" id="" class="custom-radio">Em
-                        partes</label></div>
-                <div class="radio__box"><label><input type="radio" name="concordancia" id="" class="custom-radio">Sim,
-                        com certeza!</label></div>
+            <div class="main-area__alternative-text">
+                <label for="text-area" class="text-area__question">O que poderia ser melhor para que você se
+                    sentisse mais confortável no
+                    trabalho?
+                    <textarea name="text-area" id="text-area" class="main-area__text-area" cols="30" rows="10"
+                        placeholder="Escreva seus pensamentos aqui..."></textarea></label>
             </div>
+
         </div>
         <input type="button" class="next-question__btn" id="next" value="Próxima pergunta" disabled/>
     </main>
