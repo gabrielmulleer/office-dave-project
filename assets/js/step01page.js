@@ -1,5 +1,4 @@
 const customRadio = document.querySelectorAll(".custom-radio");
-const btnNext = document.getElementById("next");
 
 customRadio.forEach((element, index) => {
   console.log(length);
@@ -7,11 +6,11 @@ customRadio.forEach((element, index) => {
     if ((element.checked = "true")) {
       next.disabled = false;
       if (index < 4) {
-        btnNext.addEventListener("click", () => {
+        next.addEventListener("click", () => {
           location.href = "step1-msg.html";
         });
       } else {
-        btnNext.addEventListener("click", () => {
+        next.addEventListener("click", () => {
           location.href = "step2.html";
         });
       }
