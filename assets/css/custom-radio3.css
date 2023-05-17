@@ -1,4 +1,4 @@
-.custom-radio {
+.custom-radio__step5 {
   cursor: pointer;
   /* hiding browser el */
   appearance: none;
@@ -12,19 +12,19 @@
 }
 
 /* keyboard navigation focus appearance */
-.custom-radio:focus-visible {
+.custom-radio__step5:focus-visible {
   outline-offset: 0;
 }
 
-.custom-radio {
+.custom-radio__step5 {
   box-shadow: 0 0 0 5px var(--question-color);
 }
 
-.custom-radio:hover {
+.custom-radio__step5:hover {
   border-width: 0;
 }
 
-.custom-radio:checked {
+.custom-radio__step5:checked {
   box-shadow: 0 0 0 5px var(--question-color);
   background-color: var(--radio-checked-color);
   border-width: 0.65rem;

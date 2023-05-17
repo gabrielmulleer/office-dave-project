@@ -14,9 +14,18 @@
     <link rel="stylesheet" href="./assets/css/main.css" />
     <link rel="stylesheet" href="./assets/css/step-bar.css" />
     <link rel="stylesheet" href="./assets/css/custom-radio.css" />
+    <link rel="stylesheet" href="./assets/css/custom-radio2.css" />
+    <link rel="stylesheet" href="./assets/css/star-rating.css" />
+    <link rel="stylesheet" href="./assets/css/slider-rating.css" />
+    <link rel="stylesheet" href="./assets/css/custom-radio3.css" />
+
+    <!-- CSS Page Msg -->
+    <link rel="stylesheet" href="./assets/css/textarea.css" />
     <!-- JS -->
     <script src="./assets/js/steps.js" defer></script>
-    <script src="./assets/js/step01page.js" defer></script>
+    <script src="./assets/js/index.js" type="module" defer></script>
+    <!-- <script src="./assets/js/timer.js" defer></script> -->
+    <!-- <script src="./assets/js/step01page.js" defer></script> -->
   </head>
 
   <body>
@@ -29,7 +38,7 @@
         />
       </h1>
     </header>
-    <main>
+    <main id="root">
       <div class="step-bar__container">
         <!-- <a href="#">Voltar</a> -->
         <div class="step-bar__steps">
@@ -47,86 +56,36 @@
             <p class="step-bar__text">
               Você se sente seguro no ambiente de trabalho?
             </p>
-            <small>Não respondido</small>
+            <small class="answer">Não respondido</small>
           </div>
           <div>
             <p class="step-bar__text">
               Você se sente confortável com seus colegas de trabalho?
             </p>
-            <small>Não respondido</small>
+            <small class="answer">Não respondido</small>
           </div>
           <div>
             <p class="step-bar__text">
               O quanto você se sente confortável com o seu gestor imediato?
             </p>
-            <small>Não respondido</small>
+            <small class="answer">Não respondido</small>
           </div>
           <div>
             <p class="step-bar__text">
               O quão satisfeito você está com a transparência da liderança?
             </p>
-            <small>Não respondido</small>
+            <small class="answer">Não respondido</small>
           </div>
           <div>
             <p class="step-bar__text">
               Você sente fisicamente seguro quando está no trabalho?
             </p>
-            <small>Não respondido</small>
+            <small class="answer">Não respondido</small>
           </div>
         </div>
       </div>
 
-      <div class="main-area__container">
-        <h2 class="main-area__question">
-          Você se sente seguro no ambiente de trabalho?
-        </h2>
-        <div class="main-area__box">
-          <p class="timer">Tempo: 2:00 minutos</p>
-          <a href="#" id="prev">Ignorar</a>
-        </div>
-        <div class="main-area__alternative">
-          <label
-            ><input
-              type="radio"
-              name="concordancia"
-              id=""
-              class="custom-radio"
-            />Discordo Totalmente</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="concordancia"
-              id=""
-              class="custom-radio"
-            />Discordo</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="concordancia"
-              id=""
-              class="custom-radio"
-            />Neutro</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="concordancia"
-              id=""
-              class="custom-radio"
-            />Concordo</label
-          >
-          <label
-            ><input
-              type="radio"
-              name="concordancia"
-              id=""
-              class="custom-radio"
-            />Concordo Totalmente</label
-          >
-        </div>
-      </div>
+      <div class="main-area__container"></div>
       <!-- <a href="step2.html" class="next-question__btn" id="next" disabled>Próxima pergunta</a> -->
       <input
         type="button"

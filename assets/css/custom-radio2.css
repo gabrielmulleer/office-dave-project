@@ -1,51 +1,53 @@
 .radio__box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
+  border-radius: 10px;
 
-    border-radius: 10px;
+  width: 143px;
+  height: 143px;
+  background: linear-gradient(0deg, #efefef, #efefef), #efefef;
+}
 
-    width: 143px;
-    height: 143px;
-    background: linear-gradient(0deg, #EFEFEF, #EFEFEF), #EFEFEF;
+.radio__box-active {
+  background: rgba(86, 204, 242, 0.5);
+  border: 3px solid #4996bb;
 }
 
 .radio__question label {
-    width: auto;
+  width: auto;
 }
 
-
-.custom-radio {
-    cursor: pointer;
-    /* hiding browser el */
-    appearance: none;
-    /* Safari support */
-    -webkit-appearance: none;
-    border: .375rem solid #fff;
-    background-color: var(--radio-bg-color);
-    border-radius: 50%;
-    height: 3.5rem;
-    width: 3.5rem;
-    margin-right: 0.5rem;
+.custom-radio__step2 {
+  cursor: pointer;
+  /* hiding browser el */
+  appearance: none;
+  /* Safari support */
+  -webkit-appearance: none;
+  /* border: 0.375rem solid #fff; */
+  background-color: rgb(196, 196, 196);
+  border-radius: 50%;
+  height: 3.0625rem;
+  width: 3.0625rem;
+  margin-right: 0.5rem;
 }
 
 /* keyboard navigation focus appearance */
-.custom-radio:focus-visible {
-    outline-offset: 0;
+.custom-radio__step2:focus-visible {
+  outline-offset: 0;
 }
 
-.custom-radio {
-    /* box-shadow: 0 0 0 5px var(--radio-color); */
+.custom-radio__step2 {
+  /* box-shadow: 0 0 0 5px var(--radio-color); */
 }
 
-.custom-radio:hover {
-    border-width: 0;
+.custom-radio__step2:hover {
+  border-width: 0;
 }
 
-.custom-radio:checked {
-    /* box-shadow: 0 0 0 5px var(--radio-checked-color); */
-    background-color: var(--radio-checked-color);
-    border-width: .375rem;
-
+.custom-radio__step2:checked {
+  /* box-shadow: 0 0 0 5px var(--radio-checked-color); */
+  background-color: var(--btn-color);
+  border-width: 0.375rem;
 }
