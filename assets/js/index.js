@@ -14,6 +14,7 @@ const mainArea = document.querySelector(".main-area__container");
 const init = () => {
   window.addEventListener("hashchange", () => {
     mainArea.innerHTML = "";
+    next.disabled = true;
     switch (window.location.hash) {
       case "":
         main.appendChild(step1.step1Container());
