@@ -46,10 +46,11 @@ function update() {
   progressBar.style.height = `${
     ((actives.length - 1) / (circles.length - 1)) * 100
   }%`;
+
   if (currentStep === 1) {
     prev.disabled = true;
   } else if (currentStep === circles.length) {
-    next.disabled = true;
+      next.disabled = true;
   } else {
     next.disabled = false;
   }
