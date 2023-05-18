@@ -3,7 +3,7 @@ const step2Container = () => {
   const template = `<h2 class="main-area__question">Você se sente confortável com seus colegas de trabalho.</h2>
   <div class="main-area__box">
       <p class="timer">Tempo: 2:00 minutos</p>
-      <a href="#" id="prev">Ignorar</a>
+      <a href="#step3" id="">Ignorar</a>
   </div>
   <div class="main-area__alternative_step2">
       <div class="radio__box"><label><input type="radio" name="concordancia" id="" class="custom-radio__step2">Nem um
