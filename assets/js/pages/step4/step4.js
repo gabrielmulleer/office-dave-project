@@ -8,7 +8,7 @@ trabalho?
 
 <div class="main-area__box">
 <p class="timer">Tempo: 2:00 minutos</p>
-<a href="#" id="prev">Ignorar</a>
+<a href="#step5" id="">Ignorar</a>
 </div>
 <div class="main-area__alternative">
 <input
