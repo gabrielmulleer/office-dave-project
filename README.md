@@ -2,13 +2,13 @@
 
 ## Tabela de conteúdos
 
-- [Visão geral](#visao-geral)
-  - [Captura de tela](#captura-de-tela)
+- [Visão geral](#visão-geral)
+  - [Captura de tela](#Captura-de-tela)
   - [Links](#links)
 - [Meu processo](#meu-processo)
-  - [Construído com](#construido-com)
+  - [Construído com](#construído-com)
 - [Autor](#autor)
-- [Reconhecimentos](#reconhecimentos)
+- [Agradecimentos](#agradecimentos)
 
 ## Visão geral
 
@@ -17,7 +17,7 @@
 ![](./screenshot.jpg)
 
 ### Links
-
+*Resolução 1440x900 (Responsividade em processo de desenvolvimento)*
 - URL do site ao vivo: [Office Dave](https://office-dave.netlify.app/)
 
 ## Meu processo
